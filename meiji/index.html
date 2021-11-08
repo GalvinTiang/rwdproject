@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function myFunction(){
+            var x = document.getElementById("idnavbar");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            }else {
+                x.className = x.className.replace("w3-show","");
+            }
+        }
+    </script>
+    <style>
+        @media screen and (min-width:1920px) {
+        body{
+            max-width: 60%;
+            margin:auto;
+            }
+            
+        }
+
+        .container{
+            position:relative;
+            width:100%;
+            overflow:hidden;
+            padding-top: 56.25%;
+        }
+
+        .responsive-iframe{
+            position:absolute;
+            top:0;
+            left:0;
+            bottom:0;
+            right:0;
+            width:100%;
+            height:100%;
+            border:none;
+        }
+    </style>
+    
+    
+    <title>MeiJi</title>
+</head>
+
+<body>
+    <div class="w3-bar w3-pale-red">
+        <a href="#" class="w3-bar-item w3-button">HOME</a>
+        <a href="#contactus" class="w3-bar-item w3-button w3-right w3-hide-small ">CONTACT</a>
+        <a href="#location" class="w3-bar-item w3-button w3-right w3-hide-small ">LOCATION</a>
+        <a href="#products" class="w3-bar-item w3-button w3-right w3-hide-small ">PRODUCTS</a>
+        <a href="#about" class="w3-bar-item w3-button w3-right w3-hide-small ">ABOUT</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <div id="idnavbar" class="w3-bar-block w3-pale-red w3-hide w3-hide-large w3-hide-medium">
+        <a href="#about" class="w3-bar-item w3-button w3-center">ABOUT</a>
+        <a href="#products" class="w3-bar-item w3-button w3-center">PRODUCTS</a>
+        <a href="#location" class="w3-bar-item w3-button w3-center">LOCATION</a>
+        <a href="#contactus" class="w3-bar-item w3-button w3-center">CONTACT</a>
+    </div>
+
+    <div class="w3-header w3-container w3-pale-red w3-padding-32 w3-center">
+        <h1 style="font-size:calc(10px+6vw);">WELCOME</h1>
+    </div>
+
+
+    <div id="about" class = "w3-container w3-row w3-white w3-padding-32">
+        <div class="w3-display-container w3-third w3-padding-24 w3-hide-small" style="height:300px;">
+            <i class="fa fa-info-circle w3-display-middle w3-padding" style="font-size:128px;"></i>
+        </div>
+        <div class="w3-container w3-twothird" style="height:300px;">
+            <h2>About</h2>
+            <p style="font-size: 18px;">BACKGROUND & HISTORY <br> MeiJi was founded in 2002 by Tiang's Family. Focusing on the goals of "Quality, Healthy, and Tradition" the company is family operation
+                making each dishes (dim sum, pau, polished glutinous rice. MeiJi has three generation of family members wroking together to fulfil the idea
+                "Quality is Our Priority". Through hard work and dedication, MeiJi began building its brand around the idea of delicious in Klang Valley. </p>
+        </div>
+    </div>    
+
+    <div id="products" class = "w3-container w3-row w3-cyan w3-padding-32">
+        <div class="w3-container w3-twothird" style="height:300px;">
+            <h2>Products</h2>
+            <p style="font-size: 18px;">Every day, before dawn, without fail, MeiJi begins to grind up material with their own secret receipe, 
+                roll out the dough by handmade & machine and to light the stoves to steam pau. Over the years，deliveryman delivers
+                foods to cafeteria and restaurants who ordered. We take pride in satisfying our customers after having taken respite
+                from their lives to truly enjoy a traditional meal reminding them of our cultural heritage.
+            </p>
+        </div>
+        <div class="w3-display-container w3-third w3-padding-24 w3-hide-small" style="height:300px;">
+            <i class="fa fa-product-hunt w3-display-middle w3-padding" style="font-size:128px;"></i>
+        </div>
+    </div> 
+
+    <div id="location" class = "w3-container w3-row w3-white w3-padding-40">
+        <div class="w3-display-container w3-third w3-padding-24 w3-hide-small" style="height:300px;">
+            <i class="fa fa-map w3-display-middle w3-padding" style="font-size:128px;"></i>
+        </div>
+        <div class="w3-container w3-twothird w3-center">
+            <h2>Location</h2>
+            <div class="container">
+                <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d497.97846179970196!2d101.37897246566058!3d3.1401581910626977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smy!4v1636324070453!5m2!1sen!2smy"
+                width="auto" height="300" style="border:0;" loading="lazy">
+                </iframe>
+            </div>
+            <p>MeiJi Sdn Bhd,<br> No 59-61, <br> Jalan Dato Tahir 5,<br> Taman Bukit Kapar, <br>42200 Kapar, <br>Selangor.
+            </p>
+        </div>
+    </div>    
+
+
+    <div id="contactus" class="w3-container w3-row w3-pale-green w3-padding-32">
+        <div class="w3-container w3-twothird">
+            <form action ="contactus.php" class="w3-container w3-card-4 w3-light-grey w3-text-black w3-margin w3-round-xlarge">
+                <h2 class="w3-center">Contact Us</h2> <!--Header-->
+                <div class="w3-row w3-section"><!--First Section-->
+                    <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i>
+                </div>
+                <div class="w3-rest">
+                    <input class="w3-input w3-border" name="name" type='text' placeholder="Name">
+                </div>
+            
+                <div class="w3-row w3-section"><!--Second Section-->
+                    <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i>
+                    </div>
+                    <div class="w3-rest">
+                        <input class="w3-input w3-border" name="email" type='text' placeholder="Email">
+                    </div>
+                </div>
+
+                <div class="w3-row w3-section"><!--Third Section-->
+                    <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-pencil"></i>
+                    </div>
+                    <div class="w3-rest">
+                        <textarea class="w3-input w3-border" id="idmessage" name="message" rows="4" cols="50"
+                        width ="100%" placeholder="Please enter your message"></textarea>
+                    </div>
+                </div>
+                <button class="w3-button w3-block w3-section w3-black w3-ripple w3-padding w3-round-medium">Send</button>
+            </form>
+        </div>  
+        </div>  
+
+        <div class="w3-display-container w3-third w3-padding-24 w3-hide-small" style="height:300px;">
+            <i class="fa fa-phone w3-display-middle w3-padding" style="font-size:200px;"></i>
+        </div>
+    </div>
+</div>
+
+    <div id="images" class="w3-display-container w3-white" style="height:350px;">
+        <img class="mySlides w3-display-middle" src="meijia.jpg" style="height:300px; width:350px;">
+        <img class="mySlides w3-display-middle" src="meijib.jpg" style="height:300px; width:350px;">
+        <img class="mySlides w3-display-middle" src="meijic.jpg" style="height:300px; width:350px;">
+    </div>
+
+    <script>
+        var myIndex=0;
+        carouse1();
+        
+        function carouse1(){
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i=0; i<x.length; i++){
+                x[i].style.display="none";
+            }
+            myIndex++;
+            if(myIndex> x.length){
+                myIndex=1
+            }
+            x[myIndex-1].style.display ="block";
+            setTimeout(carouse1,3000)
+        }
+    </script>
+
+    <footer class="w3-container w3-pale-yellow w3-center">
+        <p>Copyright:MeiJi</p>
+        <p><a href= "kaparmeiji@gmail.com">kaparmeiji@gmail.com</a></p>
+    </footer>
+
+
+    
+</body>
+
+
+
+</html>
